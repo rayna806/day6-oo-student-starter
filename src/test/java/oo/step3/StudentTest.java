@@ -35,7 +35,7 @@ public class StudentTest {
         student.join(klass);
         student.join(klass2);
         assertFalse(student.isIn(klass));
-        assertFalse(student.isIn(klass2));
+        assertTrue(student.isIn(klass2));
 
     }
     // when introduce a student is in a class then return message with name age and class
@@ -46,6 +46,6 @@ public class StudentTest {
         student.join(klass);
         String message = student.introduce();
         //Then
-        assertEquals("My name is Tom.I am 20 years old.I am a student.I am in Klass1", message);
+        assertEquals("My name is Tom.I am 20 years old.I am a student.I am in class 1.", message);
     }
 }
