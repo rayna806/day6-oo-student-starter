@@ -24,4 +24,16 @@ public class Klass {
     public Integer getNumber() {
         return number;
     }
+
+    public void assignLeader(Student student) {
+        if(student.isIn(this)) {
+            student.isLeader = true;
+        }else {
+            System.out.println("It is not one of us.");
+        }
+    }
+
+//    public boolean isLeader(Student student) {
+//        return false;
+//    }
 }
