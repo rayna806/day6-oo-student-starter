@@ -9,4 +9,11 @@ public class Teacher extends Person {
     public String introduce() {
         return String.format("My name is %s.I am %d years old.I am a teacher.",this.getName(), this.getAge());
     }
+
+    public boolean belongsTo(Klass klass) {
+    }
+
+    public void assignTo(Klass klass) {
+
+    }
 }
