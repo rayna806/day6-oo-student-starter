@@ -2,10 +2,22 @@ package oo;
 
 import java.util.Objects;
 
-public class Person {
+abstract class Person {
     private final int id;
     private final String name;
     private final int age;
+
+    public String getName() {
+        return name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public int getId() {
+        return id;
+    }
 
     public Person(int id, String name, int age) {
 
@@ -14,9 +26,7 @@ public class Person {
         this.age = age;
     }
 
-    public String introduce() {
-        return String.format("My name is %s.I am 18 years %d.",name, age);
-    }
+    public abstract String introduce() ;
 
     @Override
     public boolean equals(Object o) {
